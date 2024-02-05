@@ -79,3 +79,12 @@ let vetor2 = [ 4,5,6]
 resultado = vetor1[0] + vetor2[0]
 
 console.log(resultado)
+
+/*Desafio 05
+Dado um array numeros, crie um novo array que contenha apenas os números pares
+do array original.
+const numeros = [3, 8, 15, 21, 30, 37, 42];*/
+
+const numeros23 = [3, 8, 15, 21, 30, 37, 42];
+
+const resultado = numeros23.filter
