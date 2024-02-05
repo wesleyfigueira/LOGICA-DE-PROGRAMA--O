@@ -4,7 +4,7 @@ soma, subtração, multiplicação e divisão desses números. Armazene os
 resultados em um array, sendo o*/
 
 
-/*let numeros =[ ]
+let numeros =[ ]
 
 let numeroUm =10
 let numeroDois = 10
@@ -17,7 +17,7 @@ let divisao = numeroDois / numeroUm
 
 numeros.push(multiplica,soma,subtracao,divisao);
 
-console.log(numeros)*/
+console.log(numeros)
 
 /*------------------------------------------------------------*/
 
@@ -26,15 +26,15 @@ Crie um vetor (array) chamado notas com as notas de um aluno em três
 disciplinas. Em seguida, calcule a média das notas usando a fórmula matemática
 da média aritmética.*/
 
-/*let notas = [
+let notas1 = [
     ["matematica", 6],
     ["portugues", 8],
     ["ingles",7]
 ];
 
-let media = (notas[0][1]+ notas[1][1]+notas[2][1]) /3
+let media = (notas1[0][1]+ notas1[1][1]+notas1[2][1]) /3
 
-console.log(media );*/
+console.log(media );
 
 /*------------------------------------------------------------*/
 
@@ -43,14 +43,14 @@ Crie uma matriz (array bidimensional) chamada matriz que represente uma matriz
 2x2. Preencha a matriz com valores numéricos. Em seguida, calcule a
 determinante dessa matriz usando a fórmula matemática de determinante.*/
 
-/*let matriz = [
+let matriz = [
     [2, 3],
     [4, 5]
 ];
 
 let determinante = (matriz[0][0] * matriz[1][1]) - (matriz[0][1] * matriz[1][0]);
 
-console.log("Determinante:", determinante);*/
+console.log("Determinante:", determinante);
 
 /*------------------------------------------------------------*/
 
@@ -68,3 +68,14 @@ notas.shift()
 console.log((notas[0]+notas[1]+notas[2]+notas[3]/notas.length))
 
 
+/*Desafio 04
+Crie um vetor (array) chamado vetor1 com valores de coordenadas x e outro
+vetor vetor2 com valores de coordenadas y. Calcule o produto escalar (produto
+interno) desses dois vetores usando a fórmula matemática do produto escalar.*/
+
+let vetor1 =[ 1,2,3]
+let vetor2 = [ 4,5,6]
+
+resultado = vetor1[0] + vetor2[0]
+
+console.log(resultado)
