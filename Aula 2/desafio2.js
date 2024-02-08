@@ -87,4 +87,4 @@ const numeros = [3, 8, 15, 21, 30, 37, 42];*/
 
 const numeros23 = [3, 8, 15, 21, 30, 37, 42];
 
-const resultado = numeros23.filter
+const resultado = numeros23.filter()
