@@ -4,12 +4,12 @@
 1 e imprima cada número na tela, em ordem decrescente.*/
 
 
-/*let contador = 10
+let contador = 10
 
 while (contador >0) {
     console.log(contador)
     contador--;
-}*/
+}
 
 
 /*Desafio 2
@@ -20,7 +20,7 @@ número primo é aquele que só é divisível por 1 e por ele mesmo.
 Imprima se o número é primo ou não.*/
 
 
-//const sorteado1 = Math.floor(Math.random()*100)+1;
+
 
 
 
@@ -54,3 +54,58 @@ while (true) {
 }
 
 alert("A soma dos números pares é: " + soma);
+
+
+
+
+/*Desafio 4
+- Adivinhe o Número
+● Crie um programa que gere um número aleatório entre 1 e 100. Em 
+seguida, peça ao usuário para adivinhar o número. Use um loop 
+while para continuar pedindo ao usuário que adivinhe até que ele 
+acerte o número. Forneça dicas informando se o número é maior ou 
+menor.
+*/
+
+const sorteado1 = Math.floor(Math.random()*(10-1+1));
+
+while (true) {
+
+    let usuario =(prompt("Adivinhe o numero: "));
+    
+    if (usuario == 0) {
+        alert("Digite um numero de 1 até 100")
+    }
+    if (sorteado1 == usuario) {
+        alert("Você acertou " + sorteado1 )
+        break;
+    }
+}
+
+
+
+
+
+/*Desafio 5
+- Jogo de Adivinhação com Limite
+● Modifique o jogo de adivinhação do Desafio 4 para limitar o 
+número de tentativas. Se o usuário não adivinhar o número dentro 
+de um determinado número de tentativas (por exemplo, 5 
+tentativas), o programa deve encerrar e informar o número 
+correto*/
+
+
+const sorteado2 = Math.floor(Math.random()*(10-1+1));
+
+while (true) {
+
+    let usuario =(prompt("Adivinhe o numero: "));
+    
+    if (usuario == 0) {
+        alert("Digite um numero de 1 até 100")
+    }
+    if (sorteado2 == usuario) {
+        alert("Você acertou " + sorteado1 )
+        break;
+    }
+}
