@@ -89,3 +89,20 @@ if (!encontrado) {
 
 
 
+/*Ache a lógica: 1 1 2 3 5 8 13
+Agora, sua tarefa é criar um programa que recebe um número inteiro N
+como entrada e retorna os primeiros N termos da sequência.
+Exemplo:
+Entrada: 6 Saída: [1 , 1, 2, 3, 5, 8]
+Entrada: 14 Saída: [1, 1, 2, 3, 5, 8, 13, …, 377]*/
+
+
+
+let sequencia =[1,1]
+let entrada =parseInt(prompt("Digite um numero que deseja na sequencia fibonnaci"))
+
+for (let i =2; i < entrada ; 1++){
+    sequencia[i] = sequencia[i-1]+ sequencia[i-2]
+    sequencia.slice(0,entrada)
+}
+console.log(sequencia)
