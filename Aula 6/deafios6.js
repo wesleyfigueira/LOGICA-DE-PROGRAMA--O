@@ -98,7 +98,7 @@ Entrada: 14 Saída: [1, 1, 2, 3, 5, 8, 13, …, 377]*/
 
 
 
-let sequencia =[1,1]
+/*let sequencia =[1,1]
 let entrada =parseInt(prompt("Digite um numero que deseja na sequencia fibonnaci"))
 
 for (let i =2; i < entrada ; 1++){
@@ -106,3 +106,17 @@ for (let i =2; i < entrada ; 1++){
     sequencia.slice(0,entrada)
 }
 console.log(sequencia)
+
+
+
+
+
+arrayOrdenado=[]
+
+ for (let i =0 ; i + 1; j < novoArray.length  j++){
+    if (indexMenorNumero != i){
+        [novoArray[i], novoArray[indexMenorNumero]] = [novoArray[indexMenorNumero],novoArray[i]]
+    }
+    arrayOrdenado.push(indexMenorNumero)
+ }
+ console.log(arrayOrdenado)*/
