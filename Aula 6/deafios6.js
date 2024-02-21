@@ -3,9 +3,9 @@
 imprima o resultado.
 (1+2=3+3=6+4=10+5=15)*/
 
-let soma =0;
+let soma1 =0;
 for (let i = 1; i <=10; i++) {
-    soma +=i;
+    soma1 +=i;
 console.log("resultado da soma "+ soma)
 }
 
@@ -120,3 +120,10 @@ arrayOrdenado=[]
     arrayOrdenado.push(indexMenorNumero)
  }
  console.log(arrayOrdenado)*/
+
+
+ /*Desafio 8
+Crie um programa que pede ao usuário para inserir uma palavra e
+conta quantas vogais (a, e, i, o, u) ela contém. Utilize um loop for
+e estruturas condicionais if para realizar a contagem.
+(Não precisa considerar acentos. Ex.: aviao)*/
