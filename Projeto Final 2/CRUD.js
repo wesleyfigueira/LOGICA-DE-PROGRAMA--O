@@ -68,6 +68,7 @@ function deleteTask(id) {
 
 console.log(lerTask())
 console.log(upDate(1, "Tomar banho"));
+console.log(lerTask())
 console.log(deleteTask(1))
-
+console.log(lerTask())
 
