@@ -15,24 +15,58 @@ array para armazenar a lista das tarefas cadastradas*/
 
 
 const ToDoList ={
-    tarefas: 
+    tarefas:[
         {
+            id: 1,
             task: "Cortar o Cabelo"
         }
+    ] 
+
     
 }
 
 //CREAT
 function criarTask({task}) {
     ToDoList.tarefas.push({
+        id : ToDoList.tarefas.length +1,
         task
     })
 
 }
 criarTask({task:"lavar pratos"})
 
-console.log(ToDoList.tarefas)
+
 
 //READ
-//UPDATE
+function lerTask() {
+    return ToDoList.tarefas;
+}
+
+// UPDATE
+function upDate(id, novaTarefa) {
+    const index = ToDoList.tarefas.findIndex(tarefa => tarefa.id === id);
+    if (index !== -1) {
+        ToDoList.tarefas[index].task = novaTarefa;
+        return ToDoList.tarefas[index];
+    } else {
+        return "Tarefa não encontrada.";
+    }
+}
+
+
+console.log(upDate(1, "Tomar banho"));
+
+
 //DELETE
+
+function deleteTask(id) {
+    const index = ToDoList.tarefas.findIndex(tarefa => tarefa.id === id);
+    if (index !== -1) {
+        ToDoList.tarefas.splice(index, 1);
+        return "Tarefa excluída com sucesso.";
+    } else {
+        return "Tarefa não encontrada.";
+    }
+}
+
+
