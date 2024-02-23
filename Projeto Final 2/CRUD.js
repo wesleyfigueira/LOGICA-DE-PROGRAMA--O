@@ -34,6 +34,7 @@ function criarTask({task}) {
 
 }
 criarTask({task:"lavar pratos"})
+criarTask({task:"Lavar Banheiro"})
 
 
 
@@ -53,10 +54,6 @@ function upDate(id, novaTarefa) {
     }
 }
 
-
-console.log(upDate(1, "Tomar banho"));
-
-
 //DELETE
 
 function deleteTask(id) {
@@ -68,5 +65,9 @@ function deleteTask(id) {
         return "Tarefa não encontrada.";
     }
 }
+
+console.log(lerTask())
+console.log(upDate(1, "Tomar banho"));
+console.log(deleteTask(1))
 
 
