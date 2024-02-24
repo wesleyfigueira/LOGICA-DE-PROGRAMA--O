@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form>
+                <input name="criatarefa" placeholder="Digite Sua Tarefa aqui">
+                <button type="submit">Adicionar</button>
+            </form>
+            <div class="tasks">
+                <ul class="listadetarefas">
+                    
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script >
+                            //CREATE 
+        // capturar o elemento do html e mandar para o script
+        const $meuForm = document.querySelector("form")
+        
+
+        //Adicionar som todas as vezes que for enviado o form
+        $meuForm.addEventListener("submit", function tarefas(infosDoEvento){
+            infosDoEvento.preventDefault();
+
+            //pegar elemento e acessar valor 
+            const  $criaTarefa = document.querySelector("input[name='criatarefa']");
+            const $listaDeTarefas = document.querySelector(".listadetarefas");
+
+            $listaDeTarefas.insertAdjacentHTML("afterbegin",`<li>${$criaTarefa.value}</li>`)
+            $criaTarefa.value = " ";
+
+        })
+
+    </script>
+</body>
+</html>
